@@ -24,12 +24,8 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run-script serve'
+    customCommand: 'build-and-start:prod'
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'run-script starter'
 
 
 
