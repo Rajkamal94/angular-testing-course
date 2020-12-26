@@ -43,7 +43,6 @@ steps:
     customCommand: 'run-script test:coverage'
   displayName: 'Run test-coverage'
 
-- task: WhiteSource Bolt@20
 
 - task: PublishCodeCoverageResults@1
   inputs:
