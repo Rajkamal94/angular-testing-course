@@ -26,10 +26,11 @@ steps:
     command: 'custom'
     customCommand: 'run-script e2e'
 
-- task: Npm@1
+- task: PublishBuildArtifacts@1
   inputs:
-    command: 'custom'
-    customCommand: 'run-script lint'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: PublishTestResults@2
   inputs:
