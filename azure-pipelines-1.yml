@@ -24,11 +24,14 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run-script start'
+    customCommand: 'run-script serve'
+
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run-script e2e'
+    customCommand: 'run-script starter'
+
+
 
 - task: PublishBuildArtifacts@1
   inputs:
