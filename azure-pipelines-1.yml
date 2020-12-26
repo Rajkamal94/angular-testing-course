@@ -25,3 +25,8 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run-script e2e'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TESTS-*.xml'
