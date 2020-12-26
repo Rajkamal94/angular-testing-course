@@ -82,7 +82,7 @@ describe('Async Testing Examples', () => {
         Promise.resolve()
             .then(() => {
 
-               counter+=10;
+               counter += 10;
 
                setTimeout(() => {
 
