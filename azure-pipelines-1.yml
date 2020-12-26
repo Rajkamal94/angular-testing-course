@@ -26,6 +26,11 @@ steps:
     command: 'custom'
     customCommand: 'run-script e2e'
 
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run-script lint'
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
